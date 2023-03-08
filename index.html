@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML + CSS</title>
+    <style>
+        body{
+            background-color: #283747;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            width: 1000px;
+            height: 250px;
+            margin: 0 auto;
+            background-color: ;
+            position: relative;
+        }
+        header img{
+            position: absolute;
+            width: 100px;
+            top: 30px;
+            left: 0px;
+            height: 180px;
+            width: 180px;
+        }
+        header p{
+            position: absolute;
+            margin: 0 auto;
+            bottom: 0;
+            left: 0;
+        }
+        header ul{
+            position: absolute;
+            bottom: 20px;
+            right: 0;
+        }
+        header ul li{
+            display: inline-block;
+            font-weight: 700;
+            font-size: 20px;
+            margin-left: 40px;
+            bottom: 30px;
+        }
+        #main{
+            width: 1000px;
+            margin: 0;
+            position: relative;
+        }
+        #main .spoon{
+            position: absolute;
+            width: 800px;
+            top: 50;
+            margin-left: 300px;
+            
+        }
+        #main .line{
+            position: absolute;
+            top: 200px;
+            left: 320px;
+            width: 200px;
+        }
+        #main form{
+            position: absolute;
+            width: 450px;
+            right: 0;
+            top: 150px;
+            line-height: 10px;
+            font-size: 20px;
+        }
+        #main form .in{
+            width: 300px;
+            height: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.1);
+            font-size: 22px;
+            color: white;
+            margin: 10px 0 10px 0;
+        }
+        #main form .btn{
+            display: block;
+            width: 200px;
+            height: 30px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-weight: 700px;
+            border: 1px solid white;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        #main form .btn:hover{
+            background-color: green;
+            width: 250px;
+            height: 35px;
+        }
+        #main .spoon:hover{
+            position: absolute;
+            width: 800px;
+            top: 50;
+            margin-left: 600px;
+        }
+        #main form .in:hover{
+            border: 3px solid aquamarine;
+            border-color: aquamarine;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Imagenes/logo.png" alt="Logo" width="250" height="250">       
+        <p>RESTAURANTE EL BUEN SABOR DE ANDRÉS SILVA</p>
+        <ul>
+            <li class="selected">INICIO</li>
+            <li>NOSOTROS</li>
+            <li>PRODUCTOS</li>
+            <li>BLOGS</li>
+            <li>CONTACTO</li>
+        </ul>
+    </header>
+    <div id="main">
+        <img src="Imagenes/spoon.png" alt="Spoon" class="spoon">
+        <img src="Imagenes/line.png" alt="Line" class="line">
+        <form> 
+            <h3>Registro</h3>
+            <input type="text" class="in" placeholder="Nombre" autofocus>
+            <input type="text" class="in" placeholder="email@ejemplo.com">
+            <h3>Número de mesas</h3>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            <h3>Fumador</h3>
+            <input type="radio" name="a">Si
+            <input type="radio" name="a">No
+            <input type="button" value="Enviar" class="btn">
+        </form>
+    </div>
+</body>
+</html>
